@@ -4,8 +4,6 @@ import pandas as pd
 import csv
 import operator
 df = pd.read_csv('AOC 2024 Day 1\AOC_day01_puzzleInput.csv')
-#print("\nBefore sorting:")
-#print(df)
 
 # original csv to list.
 locations = df['locationID'].str.split().tolist()
@@ -22,9 +20,6 @@ leftSorted = sorted(convertedLeftList)
 rightSorted = sorted(convertedRightList)
 
 # find the difference between the sorted lists
-    #for each element:
-        #Subtract smaller from larger,
-        #Then add all differences...That's the answer. 
 answerList = []
 for i in range(len(leftSorted)):
     if (leftSorted[i] > rightSorted[i]):
