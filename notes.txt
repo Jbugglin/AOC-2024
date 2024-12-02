@@ -1,0 +1,34 @@
+Advent of Code 2024
+
+Day 1 / Part 1:
+    -sig locals unique number called LOCATION ID
+    -2 groups or lists
+    -pair up the numbers side by side, and measure their distance
+    -pair up SMALLEST NUMBER in the left list with the SMALLEST NUMBER in the right list.
+    -figure how far apart the 2 numbers are
+    -add up all of those distances...
+
+    -possibly sort both lists smallest # to largest, then find difference of both?
+
+    -python to scrape and parse?
+
+Left smallest: 10029
+Right smallest: 10013
+Difference: 00016
+
+
+Correct Answer: 2904518 <--We got it!!!!
+
+Day 1 / Part 2:
+
+We need to figure out how often each number from the left list appears in the right list.
+
+Calculate a similarity score by adding up each number in the left list after multiplying it by the number of times that number appears in the right list.  
+
+so...
+
+simularity score = add up the numbers in left list after
+                    multiplying it by the number of times it
+                    occurs in the right...
+
+Correct answer: 18650129 <-- Another Gold star!
